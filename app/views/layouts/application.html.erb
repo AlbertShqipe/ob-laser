@@ -11,82 +11,123 @@
 
     <style>
       body {
-          font-family: 'Bodoni Bauer', serif;
-          margin: 0;
-          padding: 0;
-          text-align: center;
+        font-family: 'Bodoni Bauer', serif;
+        margin: 0;
+        padding: 0;
+        text-align: center;
       }
       h1, h2, h3, h4, h5, h6 {
-          font-family: 'Bodoni Bauer', sans-serif;
-          color: black;
+        font-family: 'Bodoni Bauer', sans-serif;
+        color: black;
       }
 
       p {
           color: black;
       }
+
       .hero {
-        /* display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center; */
-          background: url('hero-image.jpg') center/cover no-repeat;
-          color: white;
-          padding: 100px 20px;
-          padding-top: 0px;
-          width: 100dvw;
-          height: 100dvh;
+        background: url('hero-image.jpg') center/cover no-repeat;
+        color: white;
+        text-align: center;
+        margin: auto ;
+        padding: 100px 20px;
+        padding-top: 0px;
+        width: 100dvw;
+        height: 100dvh;
       }
 
       .btn {
-          background: #FEBDC6;
-          color: white;
-          padding: 20px 40px;
-          text-decoration: none;
-          border-radius: 5px;
-          font-size: 30px;
-          margin-top: 20px;
-          &:hover {
-              background: #ff4d4d;
-          }
+        background: #FEBDC6;
+        color: white;
+        padding: 20px 40px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 30px;
+        margin-top: 40px;
+        &:hover {
+            background: #ff4d4d;
+        }
       }
 
-      .about, .pricing, .testimonials, .contact {
-          padding: 50px 20px;
-          padding-top: 0;
+      .pricing, .testimonials, .contact {
+        padding: 50px 20px;
+        padding-top: 0;
       }
 
+      .about {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: auto;
+        .text-about {
+          text-align: left;
+          width: 80%;
+          margin: auto;
+        }
+      }
       .features, .plans {
-          display: flex;
-          justify-content: center;
-          gap: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
       }
 
       .feature img, .plan {
-          width: 350px;
-          height: auto;
+        width: 350px;
+        height: auto;
       }
 
       form {
-          display: flex;
-          flex-direction: column;
-          width: 300px;
-          margin: auto;
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        margin: auto;
       }
 
       form input, form textarea, form button {
-          margin: 10px 0;
-          padding: 10px;
+        margin: 10px 0;
+        padding: 10px;
+      }
+
+      navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background:rgb(255, 226, 226);
+        padding: 20px;
+        .link {
+          color:rgb(0, 0, 0);
+          text-decoration: none;
+          &:hover {
+            color: #ff4d4d;
+          }
+        }
+      }
+      #navbar {
+        transition: opacity 0.5s ease-in-out; // Smooth fading effect
+        opacity: 1; // Fully visible by default
       }
 
       footer {
-          background:rgb(255, 226, 226);
-          color: white;
-          padding: 20px;
+        background:rgb(255, 226, 226);
+        color: white;
+        padding: 20px;
+        .link {
+          color:  #ff4d4d;
+          text-decoration: none;
+          &:hover {
+            color: black;
+          }
+        }
       }
+
     </style>
   </head>
 
-  <body>
+  <body id="page" data-controller="navbar">
     <%= yield %>
   </body>
 </html>

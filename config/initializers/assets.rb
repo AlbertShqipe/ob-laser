@@ -17,4 +17,4 @@ Rails.application.config.assets.precompile += %w(bootstrap.min.js popper.js)
 Rails.application.config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
 
 # Precompile font files
-Rails.application.config.assets.precompile += %w( *.otf *.woff *.woff2 *.ttf )
+# Rails.application.config.assets.precompile += %w( *.otf *.woff *.woff2 *.ttf )

@@ -1,13 +1,25 @@
-  <!-- Hero Section -->
+  <!-- navbar Section -->
+  <navbar id="navbar" style="display:flex; justify-content:space-between; align-items:center;">
+    <div style="display:flex; justify-content:space-around; align-items:center;">
+      <h1 style="margin-right:20px">OBLaser</h1>
+    </div>
+    <div>
+      <a href="#about" class="link">PERCHÉ NOI</a>
+      <a style="margin-left:10px" href="#testimonials" class="link">TESTIMONIANZE</a>
+      <a style="margin-left:10px" href="#contact" class="link">CONTATTACI</a>
+    </div>
+  </navbar>
+
   <header class="hero">
-    <%= image_tag 'OB-SVG.svg', style:"width:500px; margin:auto"%>
+    <%= image_tag 'OB-SVG.svg', style:"width:31.25rem;"%>
       <h1>Macchine Laser Professionali per Depilazione</h1>
       <h5>Noleggia tecnologia di alta qualità per il tuo business di bellezza.</h5>
       <a href="#contact" class="btn">Richiedi un Preventivo</a>
   </header>
 
-  <!-- About Section
-  <section class="about">
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div>
       <h2>Perché Scegliere le Nostre Macchine Laser?</h2>
       <p>Laser a Diodo DWL-2 Doppia onda combinata 808 + 1064 con sistema di super-raffreddamento "Zaffiro Dual-Chill-Tip"</p>
       <div class="features">
@@ -24,29 +36,64 @@
               <p>Facile da utilizzare</p>
           </div>
       </div>
+      <div class="text-about">
+        <h3>Come Funziona?</h3>
+        <p>Il laser a Diodo DWL-2 grazie alla doppia lunghezza d’onda combinata 808 nm + 1064 nm rappresenta la nuova frontiera per l’epilazione progressiva permanente.</p>
+        <p>Il manipolo permette di avere risultati di grande sicurezza su tutti i fototipi I-IV ed anche su pelli abbronzate. DWL-2 grazie al sistema di super-raffreddamento “Zaffiro Dual-Chill-Tip” e, grazie al puntale raffreddato, consente un gradevole refrigerio della cute trattata, mentre la veloce circolazione dell’acqua disperde il calore che si concentra nel manipolo e le ulteriori parti di maggiore riscaldamento del laser.</p>
+        <p>Questo per una migliore performance del laser e per maggior tutela della sicurezza del cliente.</p>
+        <p>DWL-2 garantisce prestazioni costanti ed efficaci idonee per soddisfare anche i professionisti più esigenti.</p>
+      </div>
+    </div>
+    <div class="application">
+      <div class="carousel">
+        <ul class="features-application">
+          <li>Riduzione permanente della crescita dei peli</li>
+          <li>Agisce anche su peli ostici</li>
+          <li>Miglioramenti a sintomi legati alla follicolite</li>
+          <li>Indicato per tutti i fototipi e tipologie di pelo</li>
+          <li>Utilizzo anche su pelli abbronzate</li>
+          <li>Sistema confortevole e poco doloroso</li>
+          <li>Alta fluenza ed elevata frequenza</li>
+          <li>Trattamento rapido di grandi aree</li>
+          <li>Fascio laser omogeneo e minimi effetti collaterali</li>
+          <li>Efficace raffreddamento cutaneo e delle parti del manipolo</li>
+          <!-- Duplicate list for seamless looping -->
+          <li>Riduzione permanente della crescita dei peli</li>
+          <li>Agisce anche su peli ostici</li>
+          <li>Miglioramenti a sintomi legati alla follicolite</li>
+          <li>Indicato per tutti i fototipi e tipologie di pelo</li>
+          <li>Utilizzo anche su pelli abbronzate</li>
+          <li>Sistema confortevole e poco doloroso</li>
+          <li>Alta fluenza ed elevata frequenza</li>
+          <li>Trattamento rapido di grandi aree</li>
+          <li>Fascio laser omogeneo e minimi effetti collaterali</li>
+          <li>Efficace raffreddamento cutaneo e delle parti del manipolo</li>
+        </ul>
+      </div>
+    </div>
   </section>
 
   <!-- Rental Plans -->
-  <%# <section class="pricing">
-      <h2>Noleggio gratutio per il tuo centro</h2>
+  <section class="pricing" id="pricing">
+      <h2>Noleggio Gratutio per il tuo Centro</h2>
       <div class="plans">
           <div class="plan">
               <h3>Basic</h3>
-              <p>Weekly / Monthly</p>
-              <span>€XX per month</span>
+              <p>Settimanale / Mensile</p>
+              <span>€XX al mese</span>
           </div>
           <div class="plan">
               <h3>Standard</h3>
-              <p>3-6 Months</p>
-              <span>€XX per month</span>
+              <p>3-6 Mesi</p>
+              <span>€XX al mese</span>
           </div>
           <div class="plan">
               <h3>Premium</h3>
-              <p>Long-Term Custom Plans</p>
-              <span>Contact Us</span>
+              <p>Piani personalizzati a lungo termine</p>
+              <span>Contattaci</span>
           </div>
       </div>
-  </section> %>
+  </section>
 
   <!-- Testimonials -->
   <section class="testimonials">
@@ -59,17 +106,17 @@
 
   <!-- Contact Section -->
   <section id="contact" class="contact">
-      <h2>Contattaci</h2>
-      <form>
-          <input type="text" placeholder="Nome e Cognome" required>
-          <input type="email" placeholder="La tua Email" required>
-          <input type="text" placeholder="Nome dell'Impresa">
-          <textarea placeholder="Il tuo Messaggio" required></textarea>
-          <button type="submit">Invia Messaggio</button>
-      </form>
+    <h2>Contattaci</h2>
+    <form>
+        <input type="text" placeholder="Nome e Cognome" required>
+        <input type="email" placeholder="La tua Email" required>
+        <input type="text" placeholder="Nome dell'Impresa">
+        <textarea placeholder="Il tuo Messaggio" required></textarea>
+        <button type="submit">Invia Messaggio</button>
+    </form>
   </section>
 
   <!-- Footer -->
   <footer>
-      <p>&copy; 2025 OBLaser. Tutti i diritti riservati.</p>
+      <p>&copy; 2025 OBLaser & <a class="link" href='https://www.albertnikolli.com/'>Albert Nikolli Arts and Software</a>. Tutti i diritti riservati.</p>
   </footer>
