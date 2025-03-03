@@ -27,7 +27,6 @@
       }
 
       .hero {
-        background: url('hero-image.jpg') center/cover no-repeat;
         color: white;
         text-align: center;
         margin: auto ;
@@ -35,6 +34,15 @@
         padding-top: 50px;
         width: 100%;
         height: auto;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+        @media (max-width: 768px) {
+          padding: 50px 20px;
+
+        }
       }
 
       .btn {
