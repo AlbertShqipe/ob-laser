@@ -68,6 +68,7 @@
           margin: auto;
         }
       }
+
       .features, .plans {
         display: flex;
         justify-content: center;
@@ -77,6 +78,10 @@
       .feature img, .plan {
         width: 350px;
         height: auto;
+
+        @media (max-width: 768px) {
+          width: 70px;
+        }
       }
 
       form {
