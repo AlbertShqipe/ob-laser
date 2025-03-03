@@ -1,0 +1,57 @@
+.menu {
+  width: 100dvw;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:rgb(255, 226, 226);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  font-size: larger;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+    li {
+      li:first-child {
+        margin-top: 20px; // or any value you want
+      }
+      margin-bottom: 20px;
+    }
+
+    a {
+      // color: $white;
+      color:rgba(0, 0, 0, 0.75);
+      text-decoration: none;
+
+      &:hover {
+        // color: $red;
+        color: white;
+      }
+    }
+
+
+    svg {
+      width: 2rem;
+      height: 2rem;
+      fill:  rgba(0, 0, 0, 0.75);
+      margin: 0 10px;
+
+      &:hover {
+        // fill: $red;
+        fill: #ff4d4d;
+      }
+
+      &:focus {
+        fill: #ff4d4d;
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.section {
+  width: 100%;
+  // height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 100px;
+
+
+  .section-title {
+    text-align: center;
+    // font-size: 2rem;
+    // margin: 20px;
+  }
+
+  .section-text {
+    text-align: justify;
+    width: 80%;
+    margin: auto;
+
+    @media (max-width: 768px) {
+      width: 90%;
+    }
+  }
+}

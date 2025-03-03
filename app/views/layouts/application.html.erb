@@ -26,56 +26,15 @@
           color: black;
       }
 
-      .hero {
-        color: white;
-        text-align: center;
-        margin: auto ;
-        padding: 100px 20px;
-        padding-top: 50px;
-        width: 100%;
-        height: auto;
 
-        img {
-          width: 100%;
-          height: auto;
-        }
-        @media (max-width: 768px) {
-          padding: 50px 20px;
 
-        }
-      }
 
-      .btn {
-        background: #FEBDC6;
-        color: white;
-        padding: 20px 40px;
-        text-decoration: none;
-        border-radius: 5px;
-        font-size: 30px;
-        margin-top: 40px;
-        &:hover {
-            background: #ff4d4d;
-        }
-      }
 
       .pricing, .testimonials, .contact {
         padding: 50px 20px;
       }
 
-      .about {
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: auto;
-        .text-about {
-          text-align: left;
-          width: 80%;
-          margin: auto;
-        }
-      }
+
 
       .features, .plans {
         display: flex;
@@ -104,25 +63,7 @@
         padding: 10px;
       }
 
-      navbar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        background:rgb(255, 226, 226);
-        padding: 20px;
-        .link {
-          color:rgb(0, 0, 0);
-          text-decoration: none;
-          &:hover {
-            color: #ff4d4d;
-          }
-        }
-      }
-      #navbar {
-        transition: opacity 0.5s ease-in-out; // Smooth fading effect
-        opacity: 1; // Fully visible by default
-      }
+
 
       footer {
         background:rgb(255, 226, 226);
@@ -140,7 +81,7 @@
     </style>
   </head>
 
-  <body id="page" data-controller="navbar">
+  <body id="page" data-controller="navbar burger-menu">
     <%= yield %>
   </body>
 </html>

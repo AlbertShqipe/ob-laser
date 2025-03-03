@@ -1,28 +1,58 @@
-  <!-- navbar Section -->
-  <navbar id="navbar" style="display:flex; justify-content:space-between; align-items:center;">
-    <div style="display:flex; justify-content:space-around; align-items:center;">
-      <h1 style="margin-right:20px">OBLaser</h1>
-    </div>
-    <div>
-      <a style="margin-left:10px" href="#about" class="link">CHI SIAMO</a>
-      <a href="#laser" class="link">IL NOSTRO LASER</a>
-      <a href="#pricing" class="link">DIVENTA PARTNER</a>
-      <a style="margin-left:10px" href="#contact" class="link">CONTATTACI</a>
+  <!-- Navbar Section -->
+  <navbar id="navbar">
+    <div class="navbar-content">
+      <div>
+        <h1 style="margin-right:20px">OBLaser</h1>
+      </div>
+      <div class="link">
+        <a style="margin-left:10px" href="#about" class="link">CHI SIAMO</a>
+        <a href="#laser" class="link">IL NOSTRO LASER</a>
+        <a href="#pricing" class="link">DIVENTA PARTNER</a>
+        <a style="margin-left:10px" href="#contact" class="link">CONTATTACI</a>
+      </div>
     </div>
   </navbar>
 
+  <!-- Burger Menu Section -->
+  <div class="burger-menu" id="burger-menu">
+    <div class="line top"></div>
+    <div class="line middle"></div>
+    <div class="line bottom"></div>
+  </div>
+  <!-- Menu Section -->
+  <div class="menu" id="menu-container">
+    <%# <%= image_tag 'OB-SVG.svg', class:"logo-menu" %>
+    <ul class="ul" >
+      <li><a href="#about">CHI SIAMO</a></li>
+      <li><a href="#laser">IL NOSTRO LASER</a></li>
+      <li><a href="#pricing">DIVENTA PARTNER</a></li>
+      <li><a href="#contact">CONTATTACI</a></li>
+      <ul class="d-flex text-center justify-content-around mt-5">
+        <li><a href="https://www.linkedin.com/in/julian-nicosia-21136716b/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39"><path d="M19.2 0C8.596 0 0 8.59604 0 19.2001C0 29.8041 8.596 38.4002 19.2 38.4002C29.804 38.4002 38.4 29.8041 38.4 19.2001C38.4 8.59604 29.804 0 19.2 0ZM14.5 27.1581H10.612V14.6461H14.5V27.1581ZM12.532 13.1101C11.304 13.1101 10.51 12.2401 10.51 11.1641C10.51 10.066 11.328 9.22204 12.582 9.22204C13.836 9.22204 14.604 10.066 14.628 11.1641C14.628 12.2401 13.836 13.1101 12.532 13.1101ZM28.7 27.1581H24.812V20.2241C24.812 18.6101 24.248 17.5141 22.842 17.5141C21.768 17.5141 21.13 18.2561 20.848 18.9701C20.744 19.2241 20.718 19.5841 20.718 19.9421V27.1561H16.828V18.6361C16.828 17.0741 16.778 15.7681 16.726 14.6441H20.104L20.282 16.3821H20.36C20.872 15.5661 22.126 14.3621 24.224 14.3621C26.782 14.3621 28.7 16.0761 28.7 19.7601V27.1581Z"/></svg></a></li>
+        <li><a href="https://www.instagram.com/juliannicosia/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><path d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"/></svg></a></li>
+        <li><a href="https://www.facebook.com/julian.nicosia.1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19,3H5C3.895,3,3,3.895,3,5v14c0,1.105,0.895,2,2,2h7.621v-6.961h-2.343v-2.725h2.343V9.309 c0-2.324,1.421-3.591,3.495-3.591c0.699-0.002,1.397,0.034,2.092,0.105v2.43h-1.428c-1.13,0-1.35,0.534-1.35,1.322v1.735h2.7 l-0.351,2.725h-2.365V21H19c1.105,0,2-0.895,2-2V5C21,3.895,20.105,3,19,3z"/></svg></a></li>
+      </ul>
+    </ul>
+  </div>
+
+
+  <!-- Banner Section -->
   <header class="hero">
     <%= image_tag 'OB-SVG.svg'%>
-    <h1>Macchine Laser Professionali per Depilazione</h1>
-    <h5>Noleggia tecnologia di alta qualità per il tuo business di bellezza.</h5>
+    <div class="text">
+      <h1>Macchine Laser Professionali per Depilazione</h1>
+      <h5>Noleggia tecnologia di alta qualità per il tuo business di bellezza a costo zero.</h5>
+    </div>
     <a href="#contact" class="btn">Richiedi un Preventivo</a>
   </header>
 
   <!-- About Section -->
-  <section class="about" id="about">
-    <h2>Chi Siamo?</h2>
-    <h3>OB: Eccellenza e Innovazione nell’Estetica Professionale</h3>
-    <div style="text-align:justify; width:80%;">
+  <div class="section" id="about">
+    <div class="section-title">
+      <h2>Chi Siamo?</h2>
+      <h3>OB: Eccellenza e Innovazione nell’Estetica Professionale</h3>
+    </div>
+    <div class="section-text">
       <p>Con oltre dieci anni di esperienza nel settore, OB è un punto di riferimento nell’estetica professionale, specializzata nell’epilazione progressiva permanente. Grazie all’uso di tecnologie avanzate e alla partnership con i migliori centri estetici e aziende americane leader nel settore, OB offre trattamenti sicuri, clinicamente testati e altamente efficaci per soddisfare le esigenze di ogni cliente.</p>
       <p>Laser a Diodo di Ultima Generazione</p>
       <p>Il nostro laser a diodo con lunghezze d’onda combinate di 808 nm + 1064 nm è progettato per eliminare progressivamente i peli superflui in modo rapido, sicuro e praticamente indolore. I risultati sono immediati e duraturi, rendendo questo trattamento la soluzione ideale per chi cerca un metodo definitivo e senza compromessi.</p>
@@ -32,29 +62,33 @@
       <p>Le nostre Specialist Beauty offrono formazione continua ai centri estetici partner per garantire un uso corretto delle nostre apparecchiature. Forniamo anche consulenze personalizzate per i clienti, creando percorsi su misura per ottenere una pelle liscia e senza peli.</p>
       <p>Scopri come diventare nostro partner o approfitta delle nostre offerte!</p>
     </div>
-  </section>
+  </div>
 
   <!-- Product Section -->
-  <section class="about" id="laser">
+  <section class="section" id="laser">
+      <div class="section-title">
+        <h2>IL NOSTRO LASER</h2>
+        <p>Laser a Diodo DWL-2 808nm + 1064nm <br>Innovazione per un’Epilazione Efficace e Sicura</p>
+      </div>
     <div>
-      <h2>IL NOSTRO LASER</h2>
-      <p>Laser a Diodo DWL-2 808nm + 1064nm: Innovazione per un’Epilazione Efficace e Sicura</p>
       <div class="features">
           <div class="feature">
               <%= image_tag "Macchina1.png", alt:"Macchina Laser"%>
-              <p>Veloce ed indolore</p>
+              <%# <p>Veloce ed indolore</p> %>
           </div>
           <div class="feature">
               <%= image_tag "Macchina2.png", alt:"Macchina Laser"%>
-              <p>Manipolo leggero</p>
+              <%# <p>Manipolo leggero</p> %>
           </div>
           <div class="feature">
               <%= image_tag "Macchina3.png", alt:"Macchina Laser"%>
-              <p>Facile da utilizzare</p>
+              <%# <p>Facile da utilizzare</p> %>
           </div>
       </div>
-      <div class="text-about">
+      <div style="margin-top:30px" class="section-title">
         <h3>Come Funziona?</h3>
+      </div>
+      <div class="section-text">
         <p>Il Laser DWL-2 con la combinazione di lunghezze d’onda 808 nm + 1064 nm è una soluzione all’avanguardia per l’epilazione progressiva permanente. Grazie a questa tecnologia innovativa, i trattamenti sono veloci, sicuri ed estremamente efficaci, offrendo risultati immediati e duraturi nel tempo.</p>
         <p>Perfetto per Tutti i Fototipi I-IV, anche su Pelli Abbronzate!</p>
         <p>Il Laser DWL-2 è in grado di trattare efficacemente tutti i fototipi di pelle, da I a IV, e può essere utilizzato anche su pelli abbronzate. La sua tecnologia avanzata garantisce risultati straordinari mantenendo alta la sicurezza. Il sistema di super-raffreddamento “Zaffiro Dual-Chill-Tip” e il puntale raffreddato assicurano che il trattamento sia confortevole, fornendo un piacevole refrigerio sulla pelle durante tutta la seduta.</p>
@@ -63,40 +97,42 @@
       </div>
     </div>
   </section>
-
-  <!-- Application Features Carousel -->
-  <div class="application">
-    <div class="carousel">
-      <ul class="features-application">
-        <li>Riduzione permanente della crescita dei peli</li>
-        <li>Agisce anche su peli ostici</li>
-        <li>Miglioramenti a sintomi legati alla follicolite</li>
-        <li>Indicato per tutti i fototipi e tipologie di pelo</li>
-        <li>Utilizzo anche su pelli abbronzate</li>
-        <li>Sistema confortevole e poco doloroso</li>
-        <li>Alta fluenza ed elevata frequenza</li>
-        <li>Trattamento rapido di grandi aree</li>
-        <li>Fascio laser omogeneo e minimi effetti collaterali</li>
-        <li>Efficace raffreddamento cutaneo e delle parti del manipolo</li>
-        <!-- Duplicate list for seamless looping -->
-        <li>Riduzione permanente della crescita dei peli</li>
-        <li>Agisce anche su peli ostici</li>
-        <li>Miglioramenti a sintomi legati alla follicolite</li>
-        <li>Indicato per tutti i fototipi e tipologie di pelo</li>
-        <li>Utilizzo anche su pelli abbronzate</li>
-        <li>Sistema confortevole e poco doloroso</li>
-        <li>Alta fluenza ed elevata frequenza</li>
-        <li>Trattamento rapido di grandi aree</li>
-        <li>Fascio laser omogeneo e minimi effetti collaterali</li>
-        <li>Efficace raffreddamento cutaneo e delle parti del manipolo</li>
-      </ul>
+    <!-- Application Features Carousel -->
+    <div class="application">
+      <div class="carousel">
+        <ul class="features-application">
+          <li>Riduzione permanente della crescita dei peli</li>
+          <li>Agisce anche su peli ostici</li>
+          <li>Miglioramenti a sintomi legati alla follicolite</li>
+          <li>Indicato per tutti i fototipi e tipologie di pelo</li>
+          <li>Utilizzo anche su pelli abbronzate</li>
+          <li>Sistema confortevole e poco doloroso</li>
+          <li>Alta fluenza ed elevata frequenza</li>
+          <li>Trattamento rapido di grandi aree</li>
+          <li>Fascio laser omogeneo e minimi effetti collaterali</li>
+          <li>Efficace raffreddamento cutaneo e delle parti del manipolo</li>
+          <!-- Duplicate list for seamless looping -->
+          <li>Riduzione permanente della crescita dei peli</li>
+          <li>Agisce anche su peli ostici</li>
+          <li>Miglioramenti a sintomi legati alla follicolite</li>
+          <li>Indicato per tutti i fototipi e tipologie di pelo</li>
+          <li>Utilizzo anche su pelli abbronzate</li>
+          <li>Sistema confortevole e poco doloroso</li>
+          <li>Alta fluenza ed elevata frequenza</li>
+          <li>Trattamento rapido di grandi aree</li>
+          <li>Fascio laser omogeneo e minimi effetti collaterali</li>
+          <li>Efficace raffreddamento cutaneo e delle parti del manipolo</li>
+        </ul>
+      </div>
     </div>
-  </div>
+
 
   <!-- Rental Plans -->
-  <section class="pricing" id="pricing">
-    <h2>DIVENTA PARTNER</h2>
-    <div style="text-align:justify; width:80%; margin:auto;">
+  <section class="section" id="pricing">
+    <div class="section-title">
+      <h2>DIVENTA PARTNER</h2>
+    </div>
+    <div class="section-text">
       <p>Cresci con Noi: Diventa Partner e Potenzia il Tuo Centro Estetico!</p>
       <p>Noleggio Laser a Diodo Senza Costi Iniziali!</p>
       <p>Aggiungi l’epilazione laser alla tua offerta e amplia i servizi per i tuoi clienti.</p>
@@ -120,13 +156,13 @@
   </section>
 
   <!-- Testimonials -->
-  <section class="testimonials">
+  <%# <section class="testimonials">
       <h2>Cosa Dicono i Nostri Clienti</h2>
       <blockquote>
           “Servizio straordinario e macchine di alta qualità! I miei clienti adorano i risultati.”
       </blockquote>
       <p>- Beauty Salon </p>
-  </section>
+  </section> %>
 
   <!-- Contact Section -->
   <section id="contact" class="contact">
@@ -141,8 +177,8 @@
   </section>
 
   <!-- Social Media Icons -->
-  <div style="text-align:right;position:sticky; bottom:20px; right:20px">
-    <a style="position:sticky; bottom:40px; right:20px" href="https://wa.me/393518677962" target="_blank">
+  <div style="text-align:right;position:sticky; bottom:5px; right:5px">
+    <a style="position:sticky; bottom:5px; right:5px" href="https://wa.me/393518677962" target="_blank">
       <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="80" height="80" viewBox="0 0 48 48">
       <path fill="#fff" d="M4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98c-0.001,0,0,0,0,0h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303z"></path><path fill="#fff" d="M4.868,43.803c-0.132,0-0.26-0.052-0.355-0.148c-0.125-0.127-0.174-0.312-0.127-0.483l2.639-9.636c-1.636-2.906-2.499-6.206-2.497-9.556C4.532,13.238,13.273,4.5,24.014,4.5c5.21,0.002,10.105,2.031,13.784,5.713c3.679,3.683,5.704,8.577,5.702,13.781c-0.004,10.741-8.746,19.48-19.486,19.48c-3.189-0.001-6.344-0.788-9.144-2.277l-9.875,2.589C4.953,43.798,4.911,43.803,4.868,43.803z"></path><path fill="#cfd8dc" d="M24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,4C24.014,4,24.014,4,24.014,4C12.998,4,4.032,12.962,4.027,23.979c-0.001,3.367,0.849,6.685,2.461,9.622l-2.585,9.439c-0.094,0.345,0.002,0.713,0.254,0.967c0.19,0.192,0.447,0.297,0.711,0.297c0.085,0,0.17-0.011,0.254-0.033l9.687-2.54c2.828,1.468,5.998,2.243,9.197,2.244c11.024,0,19.99-8.963,19.995-19.98c0.002-5.339-2.075-10.359-5.848-14.135C34.378,6.083,29.357,4.002,24.014,4L24.014,4z"></path><path fill="#40c351" d="M35.176,12.832c-2.98-2.982-6.941-4.625-11.157-4.626c-8.704,0-15.783,7.076-15.787,15.774c-0.001,2.981,0.833,5.883,2.413,8.396l0.376,0.597l-1.595,5.821l5.973-1.566l0.577,0.342c2.422,1.438,5.2,2.198,8.032,2.199h0.006c8.698,0,15.777-7.077,15.78-15.776C39.795,19.778,38.156,15.814,35.176,12.832z"></path><path fill="#fff" fill-rule="evenodd" d="M19.268,16.045c-0.355-0.79-0.729-0.806-1.068-0.82c-0.277-0.012-0.593-0.011-0.909-0.011c-0.316,0-0.83,0.119-1.265,0.594c-0.435,0.475-1.661,1.622-1.661,3.956c0,2.334,1.7,4.59,1.937,4.906c0.237,0.316,3.282,5.259,8.104,7.161c4.007,1.58,4.823,1.266,5.693,1.187c0.87-0.079,2.807-1.147,3.202-2.255c0.395-1.108,0.395-2.057,0.277-2.255c-0.119-0.198-0.435-0.316-0.909-0.554s-2.807-1.385-3.242-1.543c-0.435-0.158-0.751-0.237-1.068,0.238c-0.316,0.474-1.225,1.543-1.502,1.859c-0.277,0.317-0.554,0.357-1.028,0.119c-0.474-0.238-2.002-0.738-3.815-2.354c-1.41-1.257-2.362-2.81-2.639-3.285c-0.277-0.474-0.03-0.731,0.208-0.968c0.213-0.213,0.474-0.554,0.712-0.831c0.237-0.277,0.316-0.475,0.474-0.791c0.158-0.317,0.079-0.594-0.04-0.831C20.612,19.329,19.69,16.983,19.268,16.045z" clip-rule="evenodd"></path>
       </svg>
