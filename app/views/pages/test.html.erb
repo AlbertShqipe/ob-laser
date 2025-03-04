@@ -21,8 +21,9 @@
   </div>
   <!-- Menu Section -->
   <div class="menu" id="menu-container">
-    <%# <%= image_tag 'OB-SVG.svg', class:"logo-menu" %>
     <ul class="ul" >
+    <%= image_tag 'OB-SVG.svg', class:"logo-menu" %>
+    <%# <h1 style="margin-bottom:20px">OBLaser</h1> %>
       <li><a href="#about">CHI SIAMO</a></li>
       <li><a href="#laser">IL NOSTRO LASER</a></li>
       <li><a href="#pricing">DIVENTA PARTNER</a></li>
@@ -65,7 +66,7 @@
   </div>
 
   <!-- Product Section -->
-  <section class="section" id="laser">
+  <section style="margin-bottom:20px" class="section" id="laser">
       <div class="section-title">
         <h2>IL NOSTRO LASER</h2>
         <p>Laser a Diodo DWL-2 808nm + 1064nm <br>Innovazione per un’Epilazione Efficace e Sicura</p>
@@ -142,7 +143,7 @@
       <p>Contattaci oggi per scoprire i vantaggi esclusivi che possiamo offrirti e come possiamo supportarti nella crescita del tuo centro estetico. Non perdere questa opportunità di ampliare la tua offerta!</p>
       <p>Gestisci un centro estetico? Approfitta dei nostri vantaggi esclusivi: noleggia il laser senza costi iniziali e arricchisci la tua offerta. Contattaci per maggiori dettagli!</p>
     </div>
-    <ul style="list-style-type:none; display:flex; justify-content:space-around; align-items:center; padding:0;text-align:left;width:80%; margin:auto;">
+    <ul class="section-list-pc">
       <li>✅ LASER A DIODO 808 mn + 1064 nm<br>✅ Zero rate</li>
       <%# <li>✅ Zero rate</li> %>
       <li>✅ Giornata formativa inclusa<br>✅ Open Day con tecnico esperto</li>
@@ -151,8 +152,21 @@
       <%# <li>✅ Zero vincoli</li> %>
       <li>✅ Zero costi fissi<br>✅ Eventi dedicati</li>
       <%# <li>✅ Eventi dedicati</li> %>
-
     </ul>
+    <div class="section-list-ph">
+      <ul style="margin-bottom:20px">
+        <li>✅ LASER A DIODO 808 mn + 1064 nm</li>
+        <li>✅ Zero rate</li>
+        <li>✅ Giornata formativa inclusa</li>
+        <li>✅ Open Day con tecnico esperto</li>
+      </ul>
+      <ul>
+        <li>✅ Zero spese di gestione</li>
+        <li>✅ Zero vincoli</li>
+        <li>✅ Zero costi fissi</li>
+        <li>✅ Eventi dedicati</li>
+      </ul>
+    </div>
   </section>
 
   <!-- Testimonials -->

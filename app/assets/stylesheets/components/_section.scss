@@ -24,4 +24,33 @@
       width: 90%;
     }
   }
+
+  .section-list-pc {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    text-align: left;
+    width: 80%;
+    margin: auto;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .section-list-ph {
+    ul {
+      list-style-type: none;
+      padding: 0;
+      text-align: left;
+      width: 100%;
+      margin: auto;
+    }
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
 }
