@@ -7,6 +7,13 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
 
   get "test" => "pages#test"
+
+  # Contact routes
+  resources :contact, only: [:new, :create, :index, :destroy] do
+    collection do
+      post :send_email
+    end
+  end
   # Defines the root path route ("/")
   # root "posts#index"
 end

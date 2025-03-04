@@ -184,10 +184,28 @@
     <form>
         <input type="text" placeholder="Nome e Cognome" required>
         <input type="email" placeholder="La tua Email" required>
-        <input type="text" placeholder="Nome dell'Impresa">
+        <input type="tel" placeholder="Il tuo Telefono" required>
+        <input type="text" placeholder="Nome dell'Azienda" required>
+        <input type="text" placeholder="Città" required>
         <textarea placeholder="Il tuo Messaggio" required></textarea>
         <button type="submit">Invia Messaggio</button>
     </form>
+
+    <%= form_with url: send_email_contact_path, method: :post, local: true do |f| %>
+        <%= f.text_field :name, required: true, placeholder: "Nome e Cognome*" %>
+
+        <%= f.email_field :email, required: true, placeholder: "La tua Email*" %>
+
+        <%= f.text_field :phone, required: true, placeholder: "Il tuo Telefono*" %>
+
+        <%= f.text_field :company, required: true, placeholder: "Nome dell'Azienda*" %>
+
+        <%= f.text_field :city, required: true, placeholder: "Città*" %>
+
+        <%= f.text_area :message, required: true, placeholder: "Il tuo Messaggio*" %>
+
+        <%= f.submit "Send Message" %>
+    <% end %>
   </section>
 
   <!-- Social Media Icons -->
