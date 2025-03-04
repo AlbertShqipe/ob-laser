@@ -10,7 +10,7 @@ class ContactMailer < ApplicationMailer
     @message = message
 
     mail(
-      from: 'no-reply@oblaser.com',
+      from: 'no-reply@oblaser.it',
       subject: "Nuovo Messaggio da #{@name}, #{@email}",
       bcc: "albert_nikolli@icloud.com"
     )
