@@ -1,11 +1,52 @@
 .contact {
   .btn {
-    background-color: #FEBDC6;
-    border-color: rgb(216, 136, 24);
+    background: #FEBDC6;
     color: #fff;
     &:hover {
       background-color: #ff4d4d;
       border-color: #d13f28;
+    }
+  }
+}
+
+.ul-contact {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+  li {
+    li:first-child {
+      margin-top: 20px; // or any value you want
+    }
+    margin-bottom: 20px;
+  }
+
+  a {
+    // color: $white;
+    color:rgba(0, 0, 0, 0.75);
+    text-decoration: none;
+
+    &:hover {
+      // color: $red;
+      color: white;
+    }
+  }
+
+
+  svg {
+    width: 2rem;
+    height: 2rem;
+    fill:  rgba(0, 0, 0, 0.75);
+    margin: 0 10px;
+
+    &:hover {
+      // fill: $red;
+      fill: #ff4d4d;
+    }
+
+    &:focus {
+      fill: #ff4d4d;
     }
   }
 }
