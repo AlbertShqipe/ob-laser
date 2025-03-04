@@ -19,6 +19,7 @@
     <div class="line middle"></div>
     <div class="line bottom"></div>
   </div>
+
   <!-- Menu Section -->
   <div class="menu" id="menu-container">
     <ul class="ul" >
@@ -36,11 +37,10 @@
     </ul>
   </div>
 
-
   <!-- Banner Section -->
   <header class="hero">
-    <div class="hero-overlay"></div>
-    <%= image_tag 'OB-SVG.svg'%>
+    <div class="hero-overlay"></div> <!-- The semi-transparent white layer -->
+    <%= image_tag 'OB-SVG.svg' %>
     <div class="text">
       <h1>Macchine Laser Professionali per Depilazione</h1>
       <h5>Noleggia tecnologia di alta qualità per il tuo business di bellezza a costo zero.</h5>
@@ -72,21 +72,21 @@
         <h2>IL NOSTRO LASER</h2>
         <p>Laser a Diodo DWL-2 808nm + 1064nm <br>Innovazione per un’Epilazione Efficace e Sicura</p>
       </div>
-    <div>
       <div class="features">
-          <div class="feature">
-              <%= image_tag "Macchina1.png", alt:"Macchina Laser"%>
-              <%# <p>Veloce ed indolore</p> %>
-          </div>
-          <div class="feature">
-              <%= image_tag "Macchina2.png", alt:"Macchina Laser"%>
-              <%# <p>Manipolo leggero</p> %>
-          </div>
-          <div class="feature">
-              <%= image_tag "Macchina3.png", alt:"Macchina Laser"%>
-              <%# <p>Facile da utilizzare</p> %>
-          </div>
+        <div class="feature">
+            <%= image_tag "Macchina1.png", alt:"Macchina Laser"%>
+            <%# <p>Veloce ed indolore</p> %>
+        </div>
+        <div class="feature">
+            <%= image_tag "Macchina2.png", alt:"Macchina Laser"%>
+            <%# <p>Manipolo leggero</p> %>
+        </div>
+        <div class="feature">
+            <%= image_tag "Macchina3.png", alt:"Macchina Laser"%>
+            <%# <p>Facile da utilizzare</p> %>
+        </div>
       </div>
+    <div>
       <div style="margin-top:30px" class="section-title">
         <h3>Come Funziona?</h3>
       </div>
@@ -99,35 +99,35 @@
       </div>
     </div>
   </section>
-    <!-- Application Features Carousel -->
-    <div class="application">
-      <div class="carousel">
-        <ul class="features-application">
-          <li>Riduzione permanente della crescita dei peli</li>
-          <li>Agisce anche su peli ostici</li>
-          <li>Miglioramenti a sintomi legati alla follicolite</li>
-          <li>Indicato per tutti i fototipi e tipologie di pelo</li>
-          <li>Utilizzo anche su pelli abbronzate</li>
-          <li>Sistema confortevole e poco doloroso</li>
-          <li>Alta fluenza ed elevata frequenza</li>
-          <li>Trattamento rapido di grandi aree</li>
-          <li>Fascio laser omogeneo e minimi effetti collaterali</li>
-          <li>Efficace raffreddamento cutaneo e delle parti del manipolo</li>
-          <!-- Duplicate list for seamless looping -->
-          <li>Riduzione permanente della crescita dei peli</li>
-          <li>Agisce anche su peli ostici</li>
-          <li>Miglioramenti a sintomi legati alla follicolite</li>
-          <li>Indicato per tutti i fototipi e tipologie di pelo</li>
-          <li>Utilizzo anche su pelli abbronzate</li>
-          <li>Sistema confortevole e poco doloroso</li>
-          <li>Alta fluenza ed elevata frequenza</li>
-          <li>Trattamento rapido di grandi aree</li>
-          <li>Fascio laser omogeneo e minimi effetti collaterali</li>
-          <li>Efficace raffreddamento cutaneo e delle parti del manipolo</li>
-        </ul>
-      </div>
-    </div>
 
+  <!-- Application Features Carousel -->
+  <div class="application">
+    <div class="carousel">
+      <ul class="features-application">
+        <li>Riduzione permanente della crescita dei peli</li>
+        <li>Agisce anche su peli ostici</li>
+        <li>Miglioramenti a sintomi legati alla follicolite</li>
+        <li>Indicato per tutti i fototipi e tipologie di pelo</li>
+        <li>Utilizzo anche su pelli abbronzate</li>
+        <li>Sistema confortevole e poco doloroso</li>
+        <li>Alta fluenza ed elevata frequenza</li>
+        <li>Trattamento rapido di grandi aree</li>
+        <li>Fascio laser omogeneo e minimi effetti collaterali</li>
+        <li>Efficace raffreddamento cutaneo e delle parti del manipolo</li>
+        <!-- Duplicate list for seamless looping -->
+        <li>Riduzione permanente della crescita dei peli</li>
+        <li>Agisce anche su peli ostici</li>
+        <li>Miglioramenti a sintomi legati alla follicolite</li>
+        <li>Indicato per tutti i fototipi e tipologie di pelo</li>
+        <li>Utilizzo anche su pelli abbronzate</li>
+        <li>Sistema confortevole e poco doloroso</li>
+        <li>Alta fluenza ed elevata frequenza</li>
+        <li>Trattamento rapido di grandi aree</li>
+        <li>Fascio laser omogeneo e minimi effetti collaterali</li>
+        <li>Efficace raffreddamento cutaneo e delle parti del manipolo</li>
+      </ul>
+    </div>
+  </div>
 
   <!-- Rental Plans -->
   <section class="section" id="pricing">
@@ -182,16 +182,6 @@
   <!-- Contact Section -->
   <section id="contact" class="contact">
     <h2>Contattaci</h2>
-    <%# <form>
-        <input type="text" placeholder="Nome e Cognome" required>
-        <input type="email" placeholder="La tua Email" required>
-        <input type="tel" placeholder="Il tuo Telefono" required>
-        <input type="text" placeholder="Nome dell'Azienda" required>
-        <input type="text" placeholder="Città" required>
-        <textarea placeholder="Il tuo Messaggio" required></textarea>
-        <button type="submit">Invia Messaggio</button>
-    </form> %>
-
     <%= form_with url: send_email_contact_index_path, method: :post, local: true do |f| %>
       <%= f.text_field :name, required: true, placeholder: "Nome e Cognome*" %>
 
@@ -205,7 +195,7 @@
 
       <%= f.text_area :message, required: true, placeholder: "Il tuo Messaggio*" %>
 
-      <%= f.submit "Send Message" %>
+      <%= f.submit "Send Message", class:"btn" %>
     <% end %>
   </section>
 

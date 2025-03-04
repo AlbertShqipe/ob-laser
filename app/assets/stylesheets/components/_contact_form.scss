@@ -1,0 +1,11 @@
+.contact {
+  .btn {
+    background-color: #FEBDC6;
+    border-color: rgb(216, 136, 24);
+    color: #fff;
+    &:hover {
+      background-color: #ff4d4d;
+      border-color: #d13f28;
+    }
+  }
+}
