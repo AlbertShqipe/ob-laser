@@ -9,6 +9,8 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
 
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <style>
       body {
         font-family: 'Bodoni Bauer', serif;
@@ -81,7 +83,7 @@
     </style>
   </head>
 
-  <body id="page" data-controller="navbar burger-menu back-to-top">
+  <body id="page" data-controller="navbar burger-menu back-to-top swiper">
     <%= yield %>
   </body>
 </html>
