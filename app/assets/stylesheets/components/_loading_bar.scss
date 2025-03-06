@@ -1,0 +1,14 @@
+.loading-container {
+  width: 20%;
+  margin: auto;
+  height: 5px;
+  background-color: #e0e0e0;
+  overflow: hidden;
+  position: relative;
+}
+
+.loading-bar {
+  width: 0%;
+  height: 100%;
+  background-color: #ff4d4d;
+}

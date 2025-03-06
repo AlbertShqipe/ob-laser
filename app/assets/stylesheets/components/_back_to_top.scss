@@ -1,0 +1,9 @@
+.back-to-top {
+  z-index:10000;
+  position:fixed;
+  bottom:10px;
+  left: 10px;
+  cursor: pointer;
+  opacity: 0; /* Start hidden */
+  transition: opacity 0.6s ease-in-out;
+}
