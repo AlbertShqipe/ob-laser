@@ -6,7 +6,8 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload", rel: "preload", as: "style", onload: "this.onload=null;this.rel='stylesheet'" %>
+    <noscript><%= stylesheet_link_tag "application", "data-turbo-track": "reload" %></noscript>
     <%= javascript_importmap_tags %>
 
     <link rel="preload" as="image" href="/assets/legs-12942fe7ce4699c3f3087014d53f807dcc9317fb056d2776e5de31e6fb3633d3.png">
