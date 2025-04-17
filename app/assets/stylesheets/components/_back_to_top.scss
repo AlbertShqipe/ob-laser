@@ -6,6 +6,7 @@
   cursor: pointer;
   opacity: 0; /* Start hidden */
   transition: opacity 0.6s ease-in-out;
+
   @media (max-width: 768px) {
     width: 40px;
 
