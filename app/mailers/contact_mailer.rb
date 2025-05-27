@@ -18,6 +18,7 @@ class ContactMailer < ApplicationMailer
 
   def confirmation_email(name, email)
     @name = name
+    @email = email
     mail(to: email, subject: "Conferma: abbiamo ricevuto il tuo messaggio")
   end
 end
