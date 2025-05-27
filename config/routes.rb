@@ -8,6 +8,7 @@ Rails.application.routes.draw do
 
   get "ob" => "pages#ob"
 
+  get "test" => "pages#test"
   # Contact routes
   resources :contact, only: [:new, :create, :index, :destroy] do
     collection do

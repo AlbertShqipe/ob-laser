@@ -15,4 +15,9 @@ class ContactMailer < ApplicationMailer
       bcc: "albert_nikolli@icloud.com"
     )
   end
+
+  def confirmation_email(name, email)
+    @name = name
+    mail(to: email, subject: "Conferma: abbiamo ricevuto il tuo messaggio")
+  end
 end
