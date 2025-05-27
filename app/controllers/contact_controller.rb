@@ -1,21 +1,29 @@
 class ContactController < ApplicationController
   def send_email
-    name = params[:name]
-    email = params[:email]
-    phone = params[:phone]
-    company = params[:company]
-    city = params[:city]
-    message = params[:message]
+    fields = contact_params
+    missing_fields = fields.select { |k, v| v.blank? }.keys
 
-    if name.present? && email.present? && message.present? && company.present? && city.present?
-      ContactMailer.contact_email(name, email, phone, company, city, message).deliver_now
-      ContactMailer.confirmation_email(name, email).deliver_now
-
+    if missing_fields.empty?
+      ContactMailer.contact_email(
+        fields[:name],
+        fields[:email],
+        fields[:phone],
+        fields[:company],
+        fields[:city],
+        fields[:message]
+      ).deliver_now
+      ContactMailer.confirmation_email(fields[:name], fields[:email]).deliver_now(wait: 1.second)
       flash[:notice] = "Email inviata con successo! Ti abbiamo inviato una conferma via email."
     else
-      flash[:alert] = "Assicuratevi di riempire tutti i campi."
+      flash[:alert] = "Assicurati di compilare tutti i campi richiesti: #{missing_fields.join(', ')}"
     end
 
     redirect_back(fallback_location: root_path)
+  end
+
+  private
+
+  def contact_params
+    params.permit(:name, :email, :phone, :company, :city, :message)
   end
 end
