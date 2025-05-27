@@ -12,7 +12,7 @@ class ContactController < ApplicationController
         fields[:city],
         fields[:message]
       ).deliver_now
-      ContactMailer.confirmation_email(fields[:name], fields[:email]).deliver_now(wait: 1.second)
+      ContactMailer.confirmation_email(fields[:name], fields[:email]).deliver_now
       flash[:notice] = "Email inviata con successo! Ti abbiamo inviato una conferma via email."
     else
       flash[:alert] = "Assicurati di compilare tutti i campi richiesti: #{missing_fields.join(', ')}"
