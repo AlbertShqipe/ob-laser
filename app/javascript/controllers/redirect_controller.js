@@ -4,7 +4,7 @@ import { Controller } from "@hotwired/stimulus"
 export default class extends Controller {
   connect() {
     setTimeout(() => {
-      window.location.href = "/ob";
+      window.location.href = "/macchinario_laser_808_1064";
     }, 3000); // Redirect after 3 seconds
   }
 }
